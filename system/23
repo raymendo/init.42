@@ -1,0 +1,2 @@
+to enter an ssh session type: ssh<username> @ <ipaddress> -p <num_port>
+to enter a graphic session enter login and password 

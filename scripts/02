@@ -1,0 +1,20 @@
+echo "Give an account login to delete"
+read login
+if [ -z $login ]
+then
+echo "give a valid login name !"
+exit 1
+fi
+
+if ! grep "^$login" /etc/passwd
+then
+echo "this User does not exist ... end"
+exit 1
+fi
+
+if userdel -r $login
+echo "$login account deletion"
+echo "=================================="
+then
+echo "Removing $login (valid)"
+fi
